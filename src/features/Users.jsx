@@ -12,4 +12,6 @@ import { createSlice } from "@reduxjs/toolkit";
     }
  })
 
+ export const {login} = userSlice.actions;
+
  export default userSlice.reducer

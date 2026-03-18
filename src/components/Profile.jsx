@@ -1,6 +1,10 @@
-
+import { useSelector } from "react-redux"
 export default function Profile(){
 
+
+     const user = useSelector(()=>{
+        
+     })
 
     return (
 

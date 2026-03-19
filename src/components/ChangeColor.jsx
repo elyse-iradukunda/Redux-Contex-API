@@ -1,8 +1,11 @@
+import { useState } from "react"
+
 export default function ChangeColor(){
 
+      const [color,setColor]= useState("");
     return(
         <>
-           <input type="text" name="change" id="" />
+           <input type="text" name="change" onChange={()=>{}} />
            <button type="button">Change Color</button>
         </>
     )

@@ -6,6 +6,6 @@ export default function Login(){
 
     return (
 
-        <button type="button" onClick={()=>{Dispatch(login())}}>Login</button>
+        <button type="button" onClick={()=>{Dispatch(login({name:"Pedro",age:20,Email:"pedro@gmail.com"}))}}>Login</button>
     )
 }

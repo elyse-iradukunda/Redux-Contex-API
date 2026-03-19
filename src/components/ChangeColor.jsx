@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useDispatch } from "react-redux";
 import { ChangeColor } from "../features/Theme";
 
-export default function ChangeColor(){
+export default function ChangeColors(){
 
     const Dispatch = useDispatch();
 

@@ -7,14 +7,7 @@ const valueOfInitialState ="";
     ,
     initialState: {value:valueOfInitialState},
     reducers:{
-        // login:(state,action)=>{
-        //    state.value = action.payload;
-        // },
-
-        // logout:(state)=>{
-        //     state.value = valueOfInitialState;
-        // }
-
+        
         ChangeColor:(state,action)=>{
              state.value = action.payload;
         }

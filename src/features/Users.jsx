@@ -12,7 +12,7 @@ const valueOfInitialState = {name:"",age:0,Email:""};
            state.value = action.payload;
         },
 
-        logout:(state,action)=>{
+        logout:(state)=>{
             state.value = valueOfInitialState;
         }
     }

@@ -1,23 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
+const valueOfInitialState ="";
 
-const valueOfInitialState = {name:"",age:0,Email:""};
+ export const themeSlice = createSlice({
 
- export const userSlice = createSlice({
-
-    name:"users"
+    name:"theme"
     ,
     initialState: {value:valueOfInitialState},
     reducers:{
-        login:(state,action)=>{
-           state.value = action.payload;
-        },
+        // login:(state,action)=>{
+        //    state.value = action.payload;
+        // },
 
-        logout:(state)=>{
-            state.value = valueOfInitialState;
+        // logout:(state)=>{
+        //     state.value = valueOfInitialState;
+        // }
+
+        ChangeColor:(state,action)=>{
+             state.value = action.payload;
         }
     }
  })
 
- export const {login,logout} = userSlice.actions;
+ export const {ChangeColor} = themeSlice.actions;
 
- export default userSlice.reducer
+ export default themeSlice.reducer

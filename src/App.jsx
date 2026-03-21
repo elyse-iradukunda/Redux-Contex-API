@@ -4,6 +4,7 @@ import Profile from './components/Profile'
 import Login from './components/Login'
 import ChangeColors from './components/ChangeColor'
 import Sub from './components/Sub'
+import ProductSearch from './components/Debouncing'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
        <Login/>
 
        <ChangeColors/>
+       <ProductSearch/>
 
        <Sub/>
     </>

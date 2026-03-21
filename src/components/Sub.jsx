@@ -1,19 +1,17 @@
- import { useDispatch } from "react-redux";
- import { useState } from "react"
- import { isSubscribed } from "../features/Subscribe";
- export default function Sub(){
+import { useDispatch, useSelector } from "react-redux";
+import { subScribe } from "../features/Subscribe";
 
-    const dispatch= useDispatch();
+export default function Sub() {
 
+  const dispatch = useDispatch();
 
-    return (
-        <>
-           <h1>
-             {}
-           </h1>
+  const isSubscribed = useSelector((state) => state.subscribe.isSubscribed);
 
-           <button type="button" onClick={()=> dispatch(isSubscribed())}>Subscribe</button>
-        </>
-
-    )
- }
+  return (
+    <>
+      <button type="button" onClick={() => dispatch(subScribe())}>
+        {isSubscribed ? "subscribed" : "subscribe"}
+      </button>
+    </>
+  );
+}

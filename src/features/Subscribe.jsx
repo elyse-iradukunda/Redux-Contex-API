@@ -12,5 +12,5 @@ import { createSlice } from "@reduxjs/toolkit";
     }
  })
 
- export const {isSubscribed} = subscribeSlice.actions;
+ export const {subScribe} = subscribeSlice.actions;
  export default subscribeSlice.reducer

@@ -12,6 +12,7 @@ const store = configureStore({
   reducer:{
     user: UserReducer,
     theme: themeReducer
+    subscribe:
   }
 })
 

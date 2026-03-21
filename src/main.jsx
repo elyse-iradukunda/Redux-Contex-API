@@ -6,13 +6,14 @@ import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import UserReducer from "./features/Users"
 import  themeReducer from './features/Theme'
+import { isSubscribed } from './features/Subscribe.jsx'
 
 const store = configureStore({
 
   reducer:{
     user: UserReducer,
-    theme: themeReducer
-    subscribe:
+    theme: themeReducer,
+    subscribe:isSubscribed
   }
 })
 

@@ -1,7 +1,10 @@
+ import { useDispatch } from "react-redux";
  import { useState } from "react"
+ import { isSubscribed } from "../features/Subscribe";
  export default function Sub(){
 
-    const [sub,setSub] =useState("");
+    const dispatch= useDispatch();
+
 
     return (
         <>
@@ -9,7 +12,7 @@
              {}
            </h1>
 
-           <button type="button">Subscribe</button>
+           <button type="button" onClick={()=> dispatch(isSubscribed())}>Subscribe</button>
         </>
 
     )

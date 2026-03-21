@@ -1,12 +1,12 @@
-import { useState } from 'react'
+
 import './App.css'
 import Profile from './components/Profile'
 import Login from './components/Login'
 import ChangeColors from './components/ChangeColor'
+import Sub from './components/Sub'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -16,6 +16,8 @@ function App() {
        <Login/>
 
        <ChangeColors/>
+
+       <Sub/>
     </>
   )
 }

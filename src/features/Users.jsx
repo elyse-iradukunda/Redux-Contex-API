@@ -18,7 +18,7 @@ const valueOfInitialState = {name:"",age:0,Email:""};
     }
  })
 
- console.log("make some changes");
+
 
  export const {login,logout} = userSlice.actions;
 

@@ -5,6 +5,7 @@ import Login from './components/Login'
 import ChangeColors from './components/ChangeColor'
 import Sub from './components/Sub'
 import ProductSearch from './components/Debouncing'
+import TestRef from './components/useRef'
 
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
 
        <ChangeColors/>
        <ProductSearch/>
-
        <Sub/>
+       <TestRef/>
     </>
   )
 }

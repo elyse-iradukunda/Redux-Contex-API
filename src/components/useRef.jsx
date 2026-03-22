@@ -1,18 +1,22 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
-export default function TestRef(){
-  
-    const exampleRef = useRef(0);
-    const handleCounter = ()=>{
-         
-        return exampleRef.current++;
+export default function TestRef() {
+  const refCount = useRef(0);
+  const [stateCount, setStateCount] = useState(0);
 
-     }
+  const handleClick = () => {
+    refCount.current++;         // updates silently
+    setStateCount(refCount.current); // triggers re-render
+  };
 
-    return(
+  console.log("Component re-rendered");
 
-        <button className="background: green; text:white;" type="button" onClick={handleCounter}>Click here</button>
-    )
+  return (
+    <div>
+      <h2>State: {stateCount}</h2>
+      <h2>Ref: {refCount.current}</h2>
 
-
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
 }

@@ -19,7 +19,7 @@ const valueOfInitialState = {name:"",age:0,Email:""};
  })
 
 
-
+console.log()
  export const {login,logout} = userSlice.actions;
 
  export default userSlice.reducer

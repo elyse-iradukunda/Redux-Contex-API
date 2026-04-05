@@ -12,6 +12,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ToggleAbout from './Context-Api/ToggleAbout.jsx'
 import Nav from './Context-Api/Nav.jsx'
 import ThemeProvider from './Context-Api/ThemeProvider.jsx'
+import Welcome from './features/props/Welcome.jsx'
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
   return (
     <>
       <h1>Hello world!</h1> 
+
+      <Welcome name="Elyse"/>
 
        {/* <Profile/>
        <Login/>
